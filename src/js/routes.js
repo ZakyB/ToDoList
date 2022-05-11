@@ -8,6 +8,9 @@ import DynamicRoutePage from '../pages/dynamic-route.f7';
 import RequestAndLoad from '../pages/request-and-load.f7';
 import NotFoundPage from '../pages/404.f7';
 
+import SignIn from '../pages/SignIn.f7';
+import SignUp from '../pages/SignUp.f7';
+
 var routes = [
   {
     path: '/',
@@ -20,6 +23,14 @@ var routes = [
   {
     path: '/form/',
     component: FormPage,
+  },
+  {
+    path: '/SignIn/',
+    component: SignIn,
+  },
+  {
+    path: '/SignUp/',
+    component: SignUp,
   },
 
 
