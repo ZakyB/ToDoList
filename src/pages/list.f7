@@ -15,21 +15,50 @@
     </div>
   </div>
   <div class="page-content">
+
     <center><div class="list">
         <select id="listselect">
+
             <option valeur="les listes">les listes</option>
             <option valeur="valeur 1">valeur 1</option>
             <option valeur="valeur 2">valeur 2</option>
             <option valeur="valeur 3">valeur 3</option>
             <option valeur="valeur 4">valeur 4</option>
             <option valeur="valeur 5">valeur 5</option>
+
         </select>
-    </div></center>
+          <div id="listeTache"></div>
+    </div>
+  </center>
   </div>
 </div>
 </template>
 <script>
-export default () => {
+import Framework7 from 'framework7/bundle';
+import Dom7 from 'dom7';
+import $ from 'dom7';
+var $$ = Dom7;
+export default (props, { $f7, $on }) => {
+  $on('pageInit', () => {
+      $f7.request.get('http://127.0.0.1/ToDoListAPI/API/getAllTache.php').then((res) => {
+        console.log(res.data);
+        var i = 0;
+        var data = JSON.parse(res.data);
+        console.log(data.length);
+        var dataTache = "";
+        for (i = 0;i<data.length;i++){
+          dataTache += "<tr>"
+          +"<td>"+(i+1)+"</td>"
+          +"<td>"+data[i].libelle+"</td>"
+          +"<td>"+data[i].etat+"</td>"
+          +"<td>"+data[i].idTypeTache+"</td>"
+          +"</tr>";
+        }
+        console.log(dataTache);
+        $$('#listeTache').append($(dataTache));
+        //$$('#listeTache').append(dataTache);
+      })
+});
   return $render;
 };
 </script>
