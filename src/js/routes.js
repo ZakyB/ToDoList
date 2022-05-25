@@ -10,6 +10,7 @@ import NotFoundPage from '../pages/404.f7';
 
 import SignIn from '../pages/SignIn.f7';
 import SignUp from '../pages/SignUp.f7';
+import List from '../pages/list.f7';
 
 var routes = [
   {
@@ -31,6 +32,10 @@ var routes = [
   {
     path: '/SignUp/',
     component: SignUp,
+  },
+  {
+    path: '/List/',
+    component: List,
   },
 
 
