@@ -14,7 +14,7 @@
       <div class="toolbar-inner">
         <a href="/List/" class="link">Retour</a>
       
-        <a href="/modfiList/" class="link">Modifier une Liste</a>
+        <a href="/modifList/" class="link">Modifier une Liste</a>
       </div>
 
     </div>
