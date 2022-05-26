@@ -28,11 +28,11 @@
         <select id="listselect">
 
             <option valeur="les listes">les listes</option>
-            <option valeur="valeur 1">valeur 1</option>
-            <option valeur="valeur 2">valeur 2</option>
-            <option valeur="valeur 3">valeur 3</option>
-            <option valeur="valeur 4">valeur 4</option>
-            <option valeur="valeur 5">valeur 5</option>
+            <option valeur="valeur 1">Liste 1</option>
+            <option valeur="valeur 2">Urgent</option>
+            <option valeur="valeur 3">TPSystemExploitation</option>
+            <option valeur="valeur 4">Hackathon</option>
+            
 
         </select>
           <div id="listeTache"></div>
