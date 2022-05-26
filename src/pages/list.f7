@@ -59,11 +59,11 @@ export default (props, { $f7, $on }) => {
         var dataTache = "";
         for (i = 0;i<data.length;i++){
           dataTache += "<tr>"
-          +"<td>"+(i+1)+"</td>"
-          +"<td>"+data[i].libelle+"</td>"
-          +"<td>"+data[i].idEtat+"</td>"
-          +"<td>"+data[i].idListe+"</td>"
-          +"<td>"+data[i].idTypeTache+"</td>"
+          +"<td style='outline: thin solid'>"+data[i].id+"</td>"
+          +"<td style='outline: thin solid'>"+data[i].libelle+"</td>"
+          +"<td style='outline: thin solid'>"+data[i].etat+"</td>"
+          +"<td style='outline: thin solid'>"+data[i].liste+"</td>"
+          +"<td style='outline: thin solid'>"+data[i].typetache+"</td>"
           +"</tr>";
         }
         $$('#listeTache').append($(dataTache));
