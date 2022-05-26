@@ -1,0 +1,46 @@
+<template>
+<div class="page" data-name="Sign In">
+  <div class="navbar">
+    <div class="navbar-bg"></div>
+    <div class="navbar-inner sliding">
+      <div class="left">
+       
+      </div>
+      <div class="title">Ajout d'une liste</div>
+    </div>
+  </div>
+  <!-- Toolbar-->
+    <div class="toolbar toolbar-bottom">
+      <div class="toolbar-inner">
+        <a href="/List/" class="link">Retour</a>
+      </div>
+    </div>
+  <div class="page-content">
+    <center><div class="block-title">Veuillez renseigner le nom de votre nouvelle liste</div></center>
+    <div class="list no-hairlines-md">
+      <ul>
+        <li>
+         
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">NOM LISTE</div>
+              <div class="item-input-wrap">
+                <input type="password" placeholder="nom de la liste"/>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="block block-strong">
+        <a href="/List/" class="col button button-round button-fill">Ajouter la liste</a>
+
+    </div>
+  </div>
+</div>
+</template>
+<script>
+export default () => {
+  return $render;
+};
+</script>

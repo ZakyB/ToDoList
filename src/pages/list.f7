@@ -11,9 +11,17 @@
           <span class="if-not-md">Back</span>
         </a>
       </div>
-      <div class="title">List</div>
+      <div class="title">Listes</div>
     </div>
   </div>
+   <!-- Toolbar-->
+    <div class="toolbar toolbar-bottom">
+      <div class="toolbar-inner">
+        <a href="/" class="link">Retour</a>
+        <a href="/ajouterList/" class="link">Ajouter une liste</a>
+        <a href="/ajouterTache/" class="link">Taches</a>
+      </div>
+    </div>
   <div class="page-content">
 
     <center><div class="list">

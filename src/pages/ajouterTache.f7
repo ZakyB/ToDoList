@@ -6,29 +6,39 @@
       <div class="left">
        
       </div>
-      <div class="title">Connexion</div>
+      <div class="title">Ajout d'une liste</div>
     </div>
   </div>
+  <!-- Toolbar-->
+    <div class="toolbar toolbar-bottom">
+      <div class="toolbar-inner">
+        <a href="/List/" class="link">Retour</a>
+      </div>
+    </div>
   <div class="page-content">
-    <center><div class="block-title">Veuillez vous connecter pour accèder à vos listes de taches</div></center>
+    <center><div class="block-title">Veuillez renseigner les informations nécessaires de votre nouvelle tache</div></center>
     <div class="list no-hairlines-md">
       <ul>
         <li>
+         
           <div class="item-content item-input">
             <div class="item-inner">
-              <div class="item-title item-label">Identifiant</div>
+              <div class="item-title item-label">Libelle Tache</div>
               <div class="item-input-wrap">
-                <input type="text" placeholder="Identifiant"/>
+                <input type="password" placeholder="Tache"/>
               </div>
             </div>
           </div>
         </li>
+      </ul>
+       <ul>
         <li>
+         
           <div class="item-content item-input">
             <div class="item-inner">
-              <div class="item-title item-label">Mot de passe</div>
+              <div class="item-title item-label">Etat</div>
               <div class="item-input-wrap">
-                <input type="password" placeholder="Mot de passe"/>
+                <input type="password" placeholder="Etat de la tache"/>
               </div>
             </div>
           </div>
@@ -36,7 +46,7 @@
       </ul>
     </div>
     <div class="block block-strong">
-        <a href="/" class="col button button-round button-fill">Se Connecter</a>
+        <a href="/List/" class="col button button-round button-fill">Ajouter la tache</a>
 
     </div>
   </div>

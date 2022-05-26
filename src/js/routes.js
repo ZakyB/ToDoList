@@ -11,7 +11,8 @@ import NotFoundPage from '../pages/404.f7';
 import SignIn from '../pages/SignIn.f7';
 import SignUp from '../pages/SignUp.f7';
 import List from '../pages/list.f7';
-
+import ajouterList from '../pages/ajouterList.f7';
+import ajouterTache from '../pages/ajouterTache.f7';
 var routes = [
   {
     path: '/',
@@ -36,6 +37,14 @@ var routes = [
   {
     path: '/List/',
     component: List,
+  },
+  {
+    path: '/ajouterList/',
+    component: ajouterList,
+  },
+  {
+    path: '/ajouterTache/',
+    component: ajouterTache,
   },
 
 
