@@ -27,13 +27,6 @@
     <center><div class="list">
         <select id="listselect">
 
-            <option valeur="les listes">les listes</option>
-            <option valeur="valeur 1">Liste 1</option>
-            <option valeur="valeur 2">Urgent</option>
-            <option valeur="valeur 3">TPSystemExploitation</option>
-            <option valeur="valeur 4">Hackathon</option>
-
-
         </select>
           <div id="listeTache"></div>
     </div>
@@ -48,11 +41,21 @@ import $ from 'dom7';
 var $$ = Dom7;
 export default (props, { $f7, $on }) => {
   $on('pageInit', () => {
+      $f7.request.get('http://127.0.0.1/ToDoListAPI/API/getAllListe.php').then((res) => {
+        console.log(res.data);
+        var i = 0;
+        var data = JSON.parse(res.data);
+        var dataListe = "<option valeur='les listes'>Toutes les taches</option>";
+        for (i = 0;i<data.length;i++){
+          dataListe += "<option valeur="+data[i].idListe+">"+data[i].libelle+"</option>";
+        }
+        $$('#listselect').append($(dataListe));
+          console.log(dataListe);
+      })
       $f7.request.get('http://127.0.0.1/ToDoListAPI/API/getAllTache.php').then((res) => {
         console.log(res.data);
         var i = 0;
         var data = JSON.parse(res.data);
-        console.log(data);
         var dataTache = "";
         for (i = 0;i<data.length;i++){
           dataTache += "<tr>"
@@ -63,7 +66,6 @@ export default (props, { $f7, $on }) => {
           +"<td>"+data[i].idTypeTache+"</td>"
           +"</tr>";
         }
-        console.log(dataTache);
         $$('#listeTache').append($(dataTache));
         //$$('#listeTache').append(dataTache);
       })
