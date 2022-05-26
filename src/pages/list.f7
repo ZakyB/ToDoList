@@ -23,7 +23,7 @@
       </div>
     </div>
   <div class="page-content">
-
+   <center><div class="block-title">Selectionnez la liste que vous voulez afficher</div></center>
     <center><div class="list">
         <select id="listselect">
 
