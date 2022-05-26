@@ -13,19 +13,17 @@
     <div class="toolbar toolbar-bottom">
       <div class="toolbar-inner">
         <a href="/List/" class="link">Retour</a>
-      
-        <a href="/modifTache/" class="link">Modifier une Tache</a>
       </div>
     </div>
   <div class="page-content">
-    <center><div class="block-title">Veuillez renseigner les informations nécessaires de votre nouvelle tache</div></center>
+    <center><div class="block-title">Veuillez renseigner les informations à modifier de votre tache</div></center>
     <div class="list no-hairlines-md">
       <ul>
         <li>
          
           <div class="item-content item-input">
             <div class="item-inner">
-              <div class="item-title item-label">Libelle Tache</div>
+              <div class="item-title item-label">Modifier Libelle Tache</div>
               <div class="item-input-wrap">
                 <input type="password" placeholder="Tache"/>
               </div>
@@ -39,7 +37,7 @@
           <div class="Etat">
         <select id="Etat">
 
-            <option valeur="Etat">Etat</option>
+            <option valeur="Etat">Modifier Etat</option>
             <option valeur="valeur 1">A Faire</option>
             <option valeur="valeur 2">En Cours</option>
             <option valeur="valeur 3">Terminé</option>
@@ -57,7 +55,7 @@
          <div class="TypeTache">
         <select id="TypeTache">
 
-            <option valeur="TypeTache">Types de Tache</option>
+            <option valeur="TypeTache">Modification du Type de la Tache</option>
             <option valeur="valeur 1">Documentation</option>
             <option valeur="valeur 2">Projet</option>
             <option valeur="valeur 3">Action</option>
@@ -71,7 +69,7 @@
       </ul>
     </div>
     <div class="block block-strong">
-        <a href="/List/" class="col button button-round button-fill">Ajouter la tache</a>
+        <a href="/List/" class="col button button-round button-fill">Modifier la tache</a>
 
     </div>
   </div>

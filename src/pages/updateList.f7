@@ -6,20 +6,17 @@
       <div class="left">
        
       </div>
-      <div class="title">Ajout d'une liste</div>
+      <div class="title">Modification d'une liste</div>
     </div>
   </div>
   <!-- Toolbar-->
     <div class="toolbar toolbar-bottom">
       <div class="toolbar-inner">
         <a href="/List/" class="link">Retour</a>
-      
-        <a href="/modfiList/" class="link">Modifier une Liste</a>
       </div>
-
     </div>
   <div class="page-content">
-    <center><div class="block-title">Veuillez renseigner le nom de votre nouvelle liste</div></center>
+    <center><div class="block-title">Veuillez renseigner le nouveau nom de votre liste</div></center>
     <div class="list no-hairlines-md">
       <ul>
         <li>
@@ -28,7 +25,7 @@
             <div class="item-inner">
               <div class="item-title item-label">NOM LISTE</div>
               <div class="item-input-wrap">
-                <input type="password" placeholder="nom de la liste"/>
+                <input type="password" placeholder="Nouveau nom de la liste"/>
               </div>
             </div>
           </div>
@@ -36,7 +33,7 @@
       </ul>
     </div>
     <div class="block block-strong">
-        <a href="/List/" class="col button button-round button-fill">Ajouter la liste</a>
+        <a href="/List/" class="col button button-round button-fill">Modifier la liste</a>
 
     </div>
   </div>

@@ -13,6 +13,8 @@ import SignUp from '../pages/SignUp.f7';
 import List from '../pages/list.f7';
 import ajouterList from '../pages/ajouterList.f7';
 import ajouterTache from '../pages/ajouterTache.f7';
+import modifList from '../pages/updateList.f7';
+import modifTache from '../pages/updateTache.f7';
 var routes = [
   {
     path: '/',
@@ -37,6 +39,14 @@ var routes = [
   {
     path: '/List/',
     component: List,
+  },
+  {
+    path: '/ModifList/',
+    component: modifList,
+  },
+  {
+    path: '/ModifTache/',
+    component: modifTache,
   },
   {
     path: '/ajouterList/',
