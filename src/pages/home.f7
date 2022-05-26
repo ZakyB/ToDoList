@@ -4,7 +4,7 @@
     <div class="navbar navbar-large">
       <div class="navbar-bg"></div>
       <div class="navbar-inner">
-        
+
         <div class="title-large">
           <div class="title-large-text">TodoList</div>
         </div>
@@ -30,9 +30,9 @@
         </div>
       </div>
 
-    
 
-    
+
+
     </div>
   </div>
 </template>

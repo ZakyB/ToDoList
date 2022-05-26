@@ -18,6 +18,10 @@ import modifTache from '../pages/updateTache.f7';
 var routes = [
   {
     path: '/',
+    component: SignIn,
+  },
+  {
+    path: '/home',
     component: HomePage,
   },
   {

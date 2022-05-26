@@ -4,7 +4,7 @@
     <div class="navbar-bg"></div>
     <div class="navbar-inner sliding">
       <div class="left">
-       
+
       </div>
       <div class="title">Connexion</div>
     </div>
@@ -36,7 +36,7 @@
       </ul>
     </div>
     <div class="block block-strong">
-        <a href="/" class="col button button-round button-fill">Se Connecter</a>
+        <a href="/home" class="col button button-round button-fill">Se Connecter</a>
 
     </div>
   </div>
